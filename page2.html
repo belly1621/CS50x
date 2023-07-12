@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <style>
+
+            .centered
+            {
+                text-align: center;
+            }
+
+            .left
+            {
+              text-align: left;
+            }
+
+            .large
+            {
+                font-size: large;
+            }
+
+            .medium
+            {
+                font-size: medium;
+            }
+
+            .small
+            {
+                font-size: small;
+            }
+
+        </style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link href="styles.css" rel="stylesheet">
+<title>Nick's Webpage - Travel</title>
+<script>
+  document.addEventListener('DOMContentLoaded', function listener() {
+                let buttonElements = document.querySelectorAll('.multiple');
+                let checkanswerbuttonElement = document.querySelector('.check-button');
+                let message = document.querySelector('#message');
+                for (let buttonElement of buttonElements) {
+                    buttonElement.addEventListener('click', event => multipleChoice(event));
+                }
+
+                checkanswerbuttonElement.addEvenetListener('click', freeResponse);
+                function multipleChoice(event) {
+                    const currentbuttonElement = event.target;
+
+                    if (currentbuttonElement.classList.contains('correct')) {
+                        currentbuttonElement.style.background = 'green';
+                        message.innerHTML = 'Correct';
+
+                    }
+                    else {
+                        currentbuttonElement.style.background = 'red';
+                        message.innerHTML = 'Incorrect';
+                    }
+                }
+            })
+</script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="https://belly1621-code50-106207428-r45ggvgp72xpgr-8080.githubpreview.dev/index.html#">NB</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="https://belly1621-code50-106207428-r45ggvgp72xpgr-8080.githubpreview.dev/index.html#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://belly1621-code50-106207428-r45ggvgp72xpgr-8080.githubpreview.dev/page2.html">Travel</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://belly1621-code50-106207428-r45ggvgp72xpgr-8080.githubpreview.dev/page3.html">Cars</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://belly1621-code50-106207428-r45ggvgp72xpgr-8080.githubpreview.dev/page4.html">Hobbies</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid">
+      <main class="centered large">
+        <h1>I have been fortunate in my life to have traveled to these incredible places. I plan to see many more beautiful places on this planet in addition to these.</h1>
+      </main>
+      <p class="centered"><b>Maui, HI</b></p>
+      <p>I have vacationed to Maui a total of 5 times in my life, and each has been better than the last. We always stay at Ka'anapali Beach Club in Lahaina. Some noteable features of the hotel are; the center of the hotel is open with a large terrarium at the ground level, 3 seperate pools, and rooftop mini golf course. </p>
+      <p>How tall is Mt Haleakala?</p>
+                    <button class="multiple correct">10,023 ft</button>
+                    <button class="multiple incorrect">9,689 ft</button>
+                    <button class="multiple incorrect">11,498 ft</button>
+                    <button class="multiple incorrect">6,789 ft</button>
+      <p class="centered"><b>France</b></p>
+      <p>I went to France on a study abroad trip my Junior year of Highschool. I was in France for a total of 7 days and it was one of the best experiences of my life. We visited Normandy, Saint-Malo, Honfleur, and of course, Paris.</p>
+      <p>How long did it take to build the Eiffel Tower?</p>
+                    <button class="multiple incorrect">2 years 3 months 5 days</button>
+                    <button class="multiple incorrect">2 years 4 months 7 days</button>
+                    <button class="multiple correct">2 years 2 months 5 days</button>
+                    <button class="multiple incorrect">3 years 1 month 4 days</button>
+      <footer>
+        <p>&#169; 2022-2026 Nick Belanger</p>
+      </footer>
+  </div>
+</body>
+</html>

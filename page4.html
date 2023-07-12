@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <style>
+
+            .centered
+            {
+                text-align: center;
+            }
+
+            .large
+            {
+                font-size: large;
+            }
+
+            .medium
+            {
+                font-size: medium;
+            }
+
+            .small
+            {
+                font-size: small;
+            }
+
+            ol
+            {
+              color: green;
+            }
+
+        </style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link href="styles.css" rel="stylesheet">
+<title>Nick's Webpage - Hobbies</title>
+<script>
+  document.addEventListener('DOMContentLoaded', function listener() {
+                let buttonElements = document.querySelectorAll('.multiple');
+                let checkanswerbuttonElement = document.querySelector('.check-button');
+                let message = document.querySelector('#message');
+                for (let buttonElement of buttonElements) {
+                    buttonElement.addEventListener('click', event => multipleChoice(event));
+                }
+
+                checkanswerbuttonElement.addEvenetListener('click', freeResponse);
+                function multipleChoice(event) {
+                    const currentbuttonElement = event.target;
+
+                    if (currentbuttonElement.classList.contains('correct')) {
+                        currentbuttonElement.style.background = 'green';
+                        message.innerHTML = 'Correct';
+
+                    }
+                    else {
+                        currentbuttonElement.style.background = 'red';
+                        message.innerHTML = 'Incorrect';
+                    }
+                }
+            })
+</script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="https://belly1621-code50-106207428-r45ggvgp72xpgr-8080.githubpreview.dev/index.html#">NB</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="https://belly1621-code50-106207428-r45ggvgp72xpgr-8080.githubpreview.dev/index.html#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://belly1621-code50-106207428-r45ggvgp72xpgr-8080.githubpreview.dev/page2.html">Travel</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://belly1621-code50-106207428-r45ggvgp72xpgr-8080.githubpreview.dev/page3.html">Cars</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://belly1621-code50-106207428-r45ggvgp72xpgr-8080.githubpreview.dev/page4.html">Hobbies</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <main class="centered large">
+      <h1>These are some of my Hobbies that I enjoy most frequently.</h1>
+    </main>
+    <p class="centered"><b>Video Games</b></p>
+    <p class="centered">My top 3 favorite games of all time are:</p>
+    <p class="centered">Arma 2, War Thunder, Skyrim<p>
+
+      <p class="centered medium"><b>Outdoor Activities</b></p>
+      <p class="centered">My top 3 favorite outdoor activities are:</p>
+      <p class="centered">Offroading, Fishing, Hunting<p>
+        <p class="centered medium"><b>Spending time with my dogs</b></p>
+        <p class="centered">My dogs names are:</p>
+        <p class="centered">Ramzy - pitbull golden mix, Ozzy - pitbull lab mix</p>
+    <footer class="centered small">
+        <p>&#169; 2022-2026 Nick Belanger</p>
+      </footer>
+  </div>
+</body>
+</html>

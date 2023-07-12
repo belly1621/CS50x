@@ -1,0 +1,45 @@
+button, input[type="submit"] {
+    background-color: #d9edff;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    vertical-align: middle;
+}
+
+
+input[type="text"] {
+    line-height: 1.8;
+    width: 25%;.
+
+/* my own stylesheet is below. The above code is distribution code from the Trivia problem. */
+
+centered[type="text"] {
+    text-align: center;
+}
+
+large[type="text"] {
+    font-size: large;
+}
+
+medium[type="text"] {
+    font-size: medium;
+}
+
+small[type="text"] {
+    font-size: small;
+}
+
+ol[type="text"] {
+    color: green;
+}
+
+<h1>
+<b>
+<p>
+<div>
+<ol>

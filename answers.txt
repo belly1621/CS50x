@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: I discovered sort1 as bubble sort by discovering sort2 and sort3 first.
+
+sort2 uses: Merge Sort
+
+How do you know?: Merge sort's times were all very close together when I did my testing, and the sorted 5000 test matched the other randomized tests. I knew that if it took the same time to pass through a sorted vs non sorted, it had to be the algorithm with a runtime that had equal upper and lower bounds.
+
+sort3 uses: Selection Sort
+
+How do you know?: I found sort3 because of its runtime relative to the other 2. when passing through the sorted 50000 values were very close to the other randomized values so I knew it had to be an algorithm with matching upper and lower bounds, but it my testing it still ran faster than sort1, so I knew based on the upper and lower bounds, it had to be a total runtime of faster than bubble sort.
